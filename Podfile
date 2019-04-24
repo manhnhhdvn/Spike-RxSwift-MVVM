@@ -1,5 +1,16 @@
 def shared_all
     pod 'SwiftLint'
+    pod 'RxSwift',    '~> 4.0'
+    pod 'RxCocoa',    '~> 4.0'
+    pod 'RxDataSources', '~> 3.0'
+    pod 'SwiftDate', '~> 5.0'
+    pod 'RealmSwift'
+    pod 'Nuke', '~> 7.0'
+    pod 'RxNuke'
+    pod 'OneSignal', '>= 2.6.2', '< 3.0'
+    pod 'Instructions', '~> 1.3.0'
+    pod 'JTAppleCalendar', '7.1.7'
+    pod 'FSCalendar'
     #pod 'SwiftFormat/CLI'
 end
 def shared_ui
@@ -66,7 +77,7 @@ post_install do |installer|
     end
     installer.pods_project.targets.each do |target|
         target.build_configurations.each do |config|
-            config.build_settings['SWIFT_VERSION'] = '4.0'
+            config.build_settings['SWIFT_VERSION'] = '5.0'
             config.build_settings['ENABLE_BITCODE'] = 'NO'
             cflags = config.build_settings['OTHER_CFLAGS'] || ['$(inherited)']
             cflags << '-fembed-bitcode'

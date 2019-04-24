@@ -39,7 +39,7 @@ class FirstController: UIViewController {
     private func configureTableView() {
         tableview.refreshControl = refreshControl
         tableview.estimatedRowHeight = 64
-        tableview.rowHeight = UITableViewAutomaticDimension
+        tableview.rowHeight = UITableView.automaticDimension
 
         tableview.register(UITableViewCell.self, forCellReuseIdentifier: "Cell")
     }
@@ -93,7 +93,7 @@ class FirstController: UIViewController {
 
 extension FirstController: UITableViewDelegate {
     func tableView(_: UITableView, heightForRowAt _: IndexPath) -> CGFloat {
-        return UITableViewAutomaticDimension
+        return UITableView.automaticDimension
     }
 
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {

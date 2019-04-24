@@ -35,35 +35,35 @@ public class Logger {
     public static func debug(_ message: @autoclosure () -> Any, _
         file: String = #file, _ function: String = #function, line: Int = #line) {
         if sharedInstance.isEnable {
-            sharedInstance.log.debug(message, file, function, line: line)
+            sharedInstance.log.debug(message(), file, function, line: line)
         }
     }
 
     public static func verbose(_ message: @autoclosure () -> Any, _
         file: String = #file, _ function: String = #function, line: Int = #line) {
         if sharedInstance.isEnable {
-            sharedInstance.log.verbose(message, file, function, line: line)
+            sharedInstance.log.verbose(message(), file, function, line: line)
         }
     }
 
     public static func info(_ message: @autoclosure () -> Any, _
         file: String = #file, _ function: String = #function, line: Int = #line) {
         if sharedInstance.isEnable {
-            sharedInstance.log.info(message, file, function, line: line)
+            sharedInstance.log.info(message(), file, function, line: line)
         }
     }
 
     public static func warning(_ message: @autoclosure () -> Any, _
         file: String = #file, _ function: String = #function, line: Int = #line) {
         if sharedInstance.isEnable {
-            sharedInstance.log.warning(message, file, function, line: line)
+            sharedInstance.log.warning(message(), file, function, line: line)
         }
     }
 
     public static func error(_ message: @autoclosure () -> Any, _
         file: String = #file, _ function: String = #function, line: Int = #line) {
         if sharedInstance.isEnable {
-            sharedInstance.log.error(message, file, function, line: line)
+            sharedInstance.log.error(message(), file, function, line: line)
         }
     }
 }

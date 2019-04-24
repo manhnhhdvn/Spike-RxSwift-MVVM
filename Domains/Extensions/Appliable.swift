@@ -9,7 +9,7 @@
 public protocol Appliable {}
 
 public extension Appliable {
-    public func apply(closure: (_ this: Self) -> Void) -> Self {
+    func apply(closure: (_ this: Self) -> Void) -> Self {
         closure(self)
         return self
     }

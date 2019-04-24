@@ -1,7 +1,8 @@
 PODS:
-  - Crashlytics (3.10.1):
-    - Fabric (~> 1.7.5)
-  - Fabric (1.7.6)
+  - Crashlytics (3.12.0):
+    - Fabric (~> 1.9.0)
+  - Differentiator (3.1.0)
+  - Fabric (1.9.0)
   - FirebaseAnalytics (3.9.0):
     - FirebaseCore (~> 3.6)
     - FirebaseInstanceID (~> 1.0)
@@ -10,6 +11,7 @@ PODS:
     - GoogleToolboxForMac/NSData+zlib (~> 2.1)
   - FirebaseInstanceID (1.0.10):
     - FirebaseCore (~> 3.6)
+  - FSCalendar (2.8.0)
   - Google/Analytics (3.1.0):
     - Google/Core
     - GoogleAnalytics (~> 3.12)
@@ -17,36 +19,80 @@ PODS:
     - FirebaseAnalytics (~> 3.2)
   - GoogleAnalytics (3.17.0)
   - GoogleIDFASupport (3.14.0)
-  - GoogleToolboxForMac/Defines (2.1.3)
-  - GoogleToolboxForMac/NSData+zlib (2.1.3):
-    - GoogleToolboxForMac/Defines (= 2.1.3)
+  - GoogleToolboxForMac/Defines (2.2.0)
+  - GoogleToolboxForMac/NSData+zlib (2.2.0):
+    - GoogleToolboxForMac/Defines (= 2.2.0)
+  - Instructions (1.3.0)
+  - JTAppleCalendar (7.1.7)
+  - Nuke (7.6.1)
+  - OneSignal (2.9.5)
+  - Realm (3.14.1):
+    - Realm/Headers (= 3.14.1)
+  - Realm/Headers (3.14.1)
+  - RealmSwift (3.14.1):
+    - Realm (= 3.14.1)
   - RKNotificationHub (2.0.5)
-  - SwiftLint (0.25.0)
-  - SwiftyBeaver (1.5.1)
+  - RxCocoa (4.5.0):
+    - RxSwift (>= 4.4.2, ~> 4.4)
+  - RxDataSources (3.1.0):
+    - Differentiator (~> 3.0)
+    - RxCocoa (~> 4.0)
+    - RxSwift (~> 4.0)
+  - RxNuke (0.8.1):
+    - Nuke (~> 7.0)
+    - RxSwift (~> 4.0)
+  - RxSwift (4.5.0)
+  - SwiftDate (5.1.0)
+  - SwiftLint (0.31.0)
+  - SwiftyBeaver (1.7.0)
 
 DEPENDENCIES:
   - Crashlytics
   - Fabric
+  - FSCalendar
   - Google/Analytics
   - GoogleIDFASupport
+  - Instructions (~> 1.3.0)
+  - JTAppleCalendar (= 7.1.7)
+  - Nuke (~> 7.0)
+  - OneSignal (< 3.0, >= 2.6.2)
+  - RealmSwift
   - RKNotificationHub
+  - RxCocoa (~> 4.0)
+  - RxDataSources (~> 3.0)
+  - RxNuke
+  - RxSwift (~> 4.0)
+  - SwiftDate (~> 5.0)
   - SwiftLint
   - SwiftyBeaver
 
 SPEC CHECKSUMS:
-  Crashlytics: aee1a064cbbf99b32efa3f056a5f458d846bc8ff
-  Fabric: f8d42c893bb187326a7968b62abe55c36a987a46
+  Crashlytics: 07fb167b1694128c1c9a5a5cc319b0e9c3ca0933
+  Differentiator: be49ca3408f0ecfc761e4c7763d20c62be01b9ad
+  Fabric: f988e33c97f08930a413e08123064d2e5f68d655
   FirebaseAnalytics: e5fe8486efc01bec33f6bf82e2fa9fce4b124052
   FirebaseCore: 9691ee2ade70c098d7cf92440f4303f16d83ca75
   FirebaseInstanceID: b9eedd6846fb5e1f0f7279e1deaa7a7e4cf8392e
+  FSCalendar: 3a5ed3636e2ba1b83ebebfcf0c2603105a6f5efe
   Google: 98da4b1a60ed0beb80a290387a28333406a1eb90
   GoogleAnalytics: f42cc53a87a51fe94334821868d9c8481ff47a7b
   GoogleIDFASupport: aaf8c10bd429abb1c15349d5252244f5eda8ead1
-  GoogleToolboxForMac: 2501e2ad72a52eb3dfe7bd9aee7dad11b858bd20
+  GoogleToolboxForMac: ff31605b7d66400dcec09bed5861689aebadda4d
+  Instructions: fbbb0544d166d5c101c25b1ae58ff6da492cdddb
+  JTAppleCalendar: 96da4d8388fa6dc82d6a60d41ef36a015e167e2f
+  Nuke: d0782693c570cb4f79e2a187859ef7f06f19365d
+  OneSignal: ccdeb961882f8668305e5b694e2cb7cb325fc907
+  Realm: e12c9c2387d05c5bba3a9c394838f5870e85763b
+  RealmSwift: a82eab9b04c3e1616082c7e17aa300740847769c
   RKNotificationHub: e926748820d719f21ff374657a47fceefa1796b4
-  SwiftLint: e14651157288e9e01d6e1a71db7014fb5744a8ea
-  SwiftyBeaver: 4f74563624b2c1e821c522c54142b5dd5ebb0f30
+  RxCocoa: cbf70265dc65a981d4ac982e513c10cf23df24a0
+  RxDataSources: a843bad90c29817f5923ec8163f4af2de084ceb3
+  RxNuke: 3ae4a88cb661f913363a1a1208e11eda03e2c1ba
+  RxSwift: f172070dfd1a93d70a9ab97a5a01166206e1c575
+  SwiftDate: 6329e58969a2de31cea7f1ee1143b247693196e7
+  SwiftLint: 7a0227733d786395817373b2d0ca799fd0093ff3
+  SwiftyBeaver: 4cc0080d2e23f980652e28978db11a5c9da39165
 
-PODFILE CHECKSUM: 56d70a5be53dfc6dd3286b9c3dc4c424d4367383
+PODFILE CHECKSUM: 90bc74d38307937b9dbe17cd751a1c4f0a76b9be
 
 COCOAPODS: 1.4.0

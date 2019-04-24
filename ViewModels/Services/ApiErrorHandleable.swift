@@ -13,7 +13,7 @@ public protocol ApiErrorHandleable {
 }
 
 public extension ApiErrorHandleable {
-    public func error(_ error: Error, transition: TransitionEventBus, httpErrorClosure: (Error, TransitionEventBus) -> Void = { error, transition in
+    func error(_ error: Error, transition: TransitionEventBus, httpErrorClosure: (Error, TransitionEventBus) -> Void = { error, transition in
 
         if error is HttpErrorType {
             let errorType = error as! HttpErrorType

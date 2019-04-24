@@ -1,5 +1,5 @@
-github "ReactiveX/RxSwift" ~> 4.0
-github "RxSwiftCommunity/RxDataSources" ~> 3.0
+github "ReactiveX/RxSwift"              ~> 4.0.0
+github "RxSwiftCommunity/RxDataSources" ~> 3.0.2
 github "malcommac/SwiftDate"
 github "realm/realm-cocoa"
 
